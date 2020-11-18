@@ -1,7 +1,4 @@
-
 /*Font Family     'Playfair Display',serif;*/
-
-
 element.style {
 }
 .ct-heading h3.ct-heading-tag {
@@ -190,9 +187,10 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 25px;
 }
 #aboutItem1 .name{
-    width: 45%;
+    width: 40%;
     font-weight: 600;
     
 }
@@ -201,6 +199,7 @@ body{
 }
 #aboutItem1 .per{
     width: 10%;
+    margin-left: 10px;
 }
 #aboutItem1 .per .percentage{
     background-color: var(--gray-dark);
@@ -209,6 +208,27 @@ body{
     font-weight: 1000;
     width: fit-content;
     padding: 0px 7px;
+}
+.progress-lightblue{
+    background-color: #00d0f9;
+    width: 85%;
+    height: 10px;
+}
+.progress-blue{
+    background-color: #0674fd;
+    width: 95%;
+    height: 10px;
+}
+.progress-green{
+    background-color: #79cd1c;
+    width: 90%;
+    height: 10px;
+}
+#aboutItem1 #per1{
+    
+}
+#aboutItem1 .per .percentage{
+
 }
 #aboutItem1 .progress{
     
@@ -222,6 +242,75 @@ body{
 }
 
 /*-----------------------------------------------------------./About-----------------------------------------------------------------*/
+
+/* ----------------------------------------- what we make section -------------------------------------- */
+.whatMake{
+    background-color: black;
+    /* background-image: url("../img/whatmake.jpg"); */
+    background-size: auto;
+    text-align: center;
+    margin: 50px 0px;
+    padding: 50px 0px;
+    color: white;
+
+}
+.whatMake .top{
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.whatMake .heading{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.whatMake .video{
+    border-radius: 50%;
+    padding: 20px 0px;
+}
+.whatMake .video .third{
+    margin: auto;
+
+}
+.whatMake .video .third .second{
+    /* background-image: linear-gradient(to right,#0674fd,#00d0f9);
+    border-radius: 50%;
+    width: 80px;
+    height: 1600px;
+    padding: 10px;
+    border: 1px dashed red; */
+}
+   .whatMake .video .third .first{
+    background-image: linear-gradient(to right,#0674fd,#00d0f9);
+    line-height: 60px;
+    padding: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px dotted green;
+}
+.whatMake .video .third .first{
+    font-size: 11px;
+}
+/* ----------------------------------------- ./what we make section -------------------------------------- */
+
+/*------------------------------------------ Processing -----------------------------------------------------*/
+.processing{
+    position: relative;
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+    font-size: 50px;
+ 
+ }
+/*------------------------------------------ ./Processing ---------------------------------------------------*/
+
+
 
 
     
