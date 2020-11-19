@@ -296,19 +296,93 @@ body{
 /*------------------------------------------ Processing -----------------------------------------------------*/
 .processing{
     position: relative;
+    text-align: center;
 }
 #background {
+    font-family: 'Roboto',sans-serif;
     position: absolute;
-    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
     overflow: hidden;
-    font-size: 50px;
- 
+    z-index: -1;
+    font-size: 120px;
+    font-weight: 800;
+    color:#0674fd;
+    opacity: 0.1;
  }
+ .processing .processing-title{
+    color: #0674fd;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-family: var(--font-family-sans-serif);
+}
+.processing .easy{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    word-spacing: -15px;
+    margin-bottom: 30px;
+}
+.processing .easy .ways{
+    font-family: 'Playfair Display',serif;
+    font-style: italic;
+    background: -webkit-linear-gradient(#0674fd,#00d0f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.processing .hrProcessing{
+    height: 5px;
+    background-color: #0674fd;
+    border: none;
+    margin: auto;
+    width: 50px;
+}
+.processing .simple4{
+    margin: 30px 0px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.005em;
+    display: inline-block;
+}
 /*------------------------------------------ ./Processing ---------------------------------------------------*/
+
+/* ------------------------------------------ Quality -------------------------------------------------------*/
+.quality{
+    display: flex;
+}
+.qualityItem{
+    width: 50%;
+}
+#qualityItem1{
+    position: relative;
+}
+#qualityItem1 .backgroundGradient{
+    background-image: linear-gradient(to right,#0674fd,#00d0f9,white);
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 10px;
+    position: absolute;
+    height: 500px;
+    width: 550px;
+    overflow-y:hidden;
+}
+#qualityItem1 .backgroundGradient .qualityPic{
+    border-radius: 10px;
+
+    background-image: url("../img/quality.jpg");
+    background-size: cover;
+    height: 500px;
+}
+#qualityItem2{
+}
+/* ----------------------------------------- ./Quality ------------------------------------------------------*/
 
 
 
