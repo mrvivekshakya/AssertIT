@@ -111,9 +111,14 @@ body {
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
-*{
-    font-family:  var(--font-family-monospace);
+}  
+a{
+    text-decoration: none;
+
+} 
+a:hover{
+    text-decoration: none;
+    color: var(--gray-dark);
 }
 *::selection{
     background-color: black;
@@ -131,6 +136,106 @@ body{
     width: 1200px;
     padding: 0px 0px;
     
+}
+.title{
+    color: #0674fd;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-family: var(--font-family-sans-serif);
+}
+.heading{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+    font-family: 'Poppins',sans-serif;
+}
+.small-heading{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
+    font-family: 'Poppins',sans-serif;
+}
+.stylish-heading{
+    font-family: 'Playfair Display',serif;
+    word-spacing: 0px;
+    font-style: italic;
+    background: -webkit-linear-gradient(#0674fd,#00d0f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text{
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.005em;
+    display: inline-block;
+}
+.bold-text{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.005em;
+    display: inline-block;
+}
+.background-text{
+    font-family: 'Roboto',sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+    font-size: 120px;
+    font-weight: 800;
+    color:#0674fd;
+    opacity: 0.1;
+}
+.myhrleft{
+    height: 5px;
+    background-color: #0674fd;
+    border: none;
+    width: 50px;
+    padding-left: 10px;
+}
+.myhrcenter{
+    height: 5px;
+    background-color: #0674fd;
+    border: none;
+    margin: auto;
+    width: 50px;
+}
+.mybtn{
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 32px;
+    line-height: 50px;
+    text-decoration: none !important;
+    touch-action: manipulation;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 30px 30px 30px 30px;
+    background-image: linear-gradient(to right,#0674fd,#00d0f9);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.footer-text{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    line-height: 1.61;
+    letter-spacing: 0.005em;
+    display: inline-block;
+
 }
 
 /*-----------------------------------------------------------About-----------------------------------------------------------------*/
@@ -369,20 +474,345 @@ body{
     padding-left: 50px;
     border-radius: 10px;
     position: absolute;
-    height: 500px;
+    height: 450px; 
     width: 550px;
-    overflow-y:hidden;
 }
 #qualityItem1 .backgroundGradient .qualityPic{
     border-radius: 10px;
-
     background-image: url("../img/quality.jpg");
     background-size: cover;
-    height: 500px;
+    height: 450px; 
 }
 #qualityItem2{
+    position: relative;
+    padding-top: 25px;
 }
+#qualityItem2 .qbackground {
+    font-family: 'Roboto',sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+    font-size: 120px;
+    font-weight: 800;
+    color:#0674fd;
+    opacity: 0.1;
+    border: 1px solid red;
+ }
+ #qualityItem2 .quality-title{
+    color: #0674fd;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-family: var(--font-family-sans-serif);
+ }
+ #qualityItem2 .ourUlitimate{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+    font-family: 'Poppins',sans-serif;
+}
+#qualityItem2 .ourUlitimate .ultimate{
+    font-family: 'Playfair Display',serif;
+    word-spacing: 0px;
+    font-style: italic;
+    background: -webkit-linear-gradient(#0674fd,#00d0f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#qualityItem2 ul{
+    margin: 30px 0px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.005em;
+    display: inline-block;
+    font-weight: 600;
+
+}
+ul{
+    padding: 0;
+    margin: 0 0 15px;
+}
+ul li{
+    list-style-position: inside
+}
+
 /* ----------------------------------------- ./Quality ------------------------------------------------------*/
+
+/* ----------------------------------------- Services Section ------------------------------------------------------*/
+/* ----------------------------------------- ./Services Section ------------------------------------------------------*/
+
+/* ----------------------------------------- Services-bar Section ------------------------------------------------------*/
+.sevices-bar{
+    display: flex;
+    justify-content: space-around;
+}
+.services-bar-item{
+    width: 250px;
+    padding:  15px 15px 0px 15px;
+    background-color: rgb(234, 247, 248);
+    border: 1px dashed lightgray;
+}
+.services-bar-item .icon{
+    text-align: center;
+    font-size: 50px;
+}
+.services-bar-item .icon .inicon{
+    background-image: linear-gradient(#0674fd,#00d0f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-bar-item .content{
+    
+    padding: 10px 10px 10px 10px;
+}
+.services-bar-item .small-heading{
+    text-align: center;
+}
+.services-bar-item .small-content{
+    text-align: center;
+    padding-left: -10px;
+}
+/*hover */
+.services-bar-item:hover{
+    border: none;
+}
+
+#sevices-bar-item1:hover{
+    background-image: url("../img/service-bg1.jpg");
+    background-size: cover;
+}
+#sevices-bar-item2:hover{
+    background-image: url("../img/service-bg2.jpg");
+    background-color: black;
+}
+#sevices-bar-item3:hover{
+    background-image: url("../img/service-bg3.jpg");
+    background-color: black;
+}
+#sevices-bar-item4:hover{
+    background-image: url("../img/service-bg4.jpg");
+    background-color: black;
+}
+.services-bar-item:hover .content{
+    background-image: linear-gradient(#0674fd,#00d0f9);
+    color: white;
+    opacity: 0.9;
+}
+.services-bar-item:hover .small-content{
+    color: white;
+}
+.services-bar-item:hover .icon .inicon{
+    background-image: linear-gradient(white,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ----------------------------------------- ./Services-bar Section ------------------------------------------------------*/
+
+/* ----------------------------------------- portfolio Section ------------------------------------------------------*/
+/* ----------------------------------------- ./portfolio Section ------------------------------------------------------*/
+
+/* ----------------------------------------- portfolio-bar Section ------------------------------------------------------*/
+/* ----------------------------------------- ./portfolio-bar Section ------------------------------------------------------*/
+
+/* ----------------------------------------- about-us Section ------------------------------------------------------*/
+.my-about-us{
+    display: flex;
+    background-image: url("../img/white-online-132a4.jpg");
+    background-size: cover;
+}
+.my-about-us .content{
+    width: 80%;
+}
+.blank{
+    width: 19%;
+}
+.my-about-us-items{
+    display: flex;
+}
+.my-about-us-items .item{
+    width: 33%;
+
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+.my-about-us-items .item .icon{
+    font-size: 50px;
+    background-image: linear-gradient(to right,#0674fd,#00d0f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.my-about-us-items .item .remaining{
+
+}
+.my-about-us-items .item .remaining .small-heading{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.my-about-us-items .item .remaining .bold-text{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* ----------------------------------------- ./about-us Section ------------------------------------------------------*/
+
+/* ----------------------------------------- testimonial Section ------------------------------------------------------*/
+/* ----------------------------------------- ./testimonial Section ------------------------------------------------------*/
+
+/* ----------------------------------------- testimonial Scroll-bar Section ------------------------------------------------------*/
+/* ----------------------------------------- ./testimonial Scroll-bar Section ------------------------------------------------------*/
+
+/* ----------------------------------------- testimonial-bar Section ------------------------------------------------------*/
+.testimonial-bar{
+    display: flex;
+    padding: 50px 0px;
+}
+.testimonial-bar .titem{
+    width: 25%;
+    text-align: center;
+}
+.testimonial-bar .titem img{
+    height: 110px;
+    filter: grayscale(100%);
+    margin: auto;
+}
+
+.testimonial-bar .titem:hover img{
+    filter: grayscale(0%);
+}
+
+
+/* ----------------------------------------- ./testimonial-bar Section ------------------------------------------------------*/
+
+/* ----------------------------------------- Form Section -------------------------------------------------------------------*/
+.contact{
+    display: flex;
+}
+.contact .contactItem{
+    width: 50%;
+}
+.contact .contactItem .heading{
+    font-size: 32px;
+}
+.contact .contactItem .assert-email{
+    padding: 3px 0px;
+    font-size: 20px;
+}
+.contact .contactItem .assert-phone{
+    padding: 3px 0px;
+    font-size: 20px;
+}
+.contact .contactItem .assert-email span{
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+}
+.contact .contactItem .assert-phone span{
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+}
+.contact .contactItem .text{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.home-form{
+
+}
+.home-form .mybtn{
+    color: white;
+    height: 45px;
+    padding: 0px;
+    border-radius: 25px 25px 25px 25px;
+    border: none;
+}
+.home-form input{
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500px;
+    color: #333;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+.home-form textarea{
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500px;
+    color: #333;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+.home-form input:focus{
+    outline: none;
+    border:1px solid #0674fd;
+}
+.home-form input::placeholder{
+    font-family: sans-serif;
+    font-weight: 500px;
+    color: #333;
+    font-size: 15px;
+
+}
+/* ----------------------------------------- ./Form Section -----------------------------------------------------------------*/
+
+/* ----------------------------------------- Footer Section -------------------------------------------------------------------*/
+.upper{
+    background-image: url("../img/building-1.png");
+    height: 150px;
+    background-size: 100%;
+    filter: grayscale(1%);
+}
+.lower{
+    background-color: black;
+    background-image: url("../img/map.png");
+    height: 500px;
+    background-size: contain;
+}
+/* ----------------------------------------- ./Footer Section -----------------------------------------------------------------*/
+
+
+/* ----------------------------------------- Footer-bottom Section -----------------------------------------------------------------*/
+.footer-bottom{
+    background-color: rgb(10, 10, 10);
+}
+.footer-bottom .main{
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.footer-bottom .main .fb-item{
+    color: white;
+}
+.footer-bottom .main #fb-item2{
+    text-align: right;
+}
+.footer-bottom .main #fb-item2 .fab:hover{
+    color: #08a2da;
+}
+/* ----------------------------------------- ./Footer-bottom Section ---------------------------------------------------------------*/
+
+
+
+
+
 
 
 
