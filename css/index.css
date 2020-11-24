@@ -232,10 +232,17 @@ body{
     font-weight: 500;
     color: white;
     font-size: 15px;
-    line-height: 1.61;
     letter-spacing: 0.005em;
     display: inline-block;
 
+}
+.bold-footer-text{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.005em;
+    display: inline-block;
 }
 
 /*-----------------------------------------------------------About-----------------------------------------------------------------*/
@@ -775,17 +782,170 @@ ul li{
 
 /* ----------------------------------------- Footer Section -------------------------------------------------------------------*/
 .upper{
-    background-image: url("../img/building-1.png");
-    height: 150px;
+    background-image: url("../img/building.png");
+    height: 170px;
     background-size: 100%;
     filter: grayscale(1%);
 }
 .lower{
     background-color: black;
     background-image: url("../img/map.png");
-    height: 500px;
+    height: 450px;
     background-size: contain;
 }
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 50px 0px;
+}
+.footer .footer-item{
+    padding: 0px 20px;
+}
+.footer #footer-item1 .about{
+    padding: 20px 0px 10px 0px;
+}
+.footer #footer-item1 .whatsapp{
+    color: white;
+    padding: 5px 0px;
+}
+.footer #footer-item1 .gmail{
+    color: white;
+    padding: 5px 0px;
+
+}
+
+.footer #footer-item1 .whatsapp:hover i{
+    color: #0674fd;
+}
+.footer #footer-item1 .gmail:hover i{
+    color: #0674fd;
+}
+
+.footer #footer-item2 .quick{
+    color: white
+}
+.footer #footer-item2 .myhrleft{
+    height: 3px;
+    width: 30px;
+    margin: 5px 0px;
+}
+.footer #footer-item2 .links{
+    color: white;
+    margin-top: 20px;
+}
+.footer #footer-item2 .links li{
+    color: white;
+    list-style-type: none;
+    padding: 5px 0px;
+}
+
+.footer #footer-item3 .location{
+    color: white;
+}
+.footer #footer-item3 .myhrleft{
+    height: 3px;
+    width: 30px;
+    margin: 5px 0px;
+}
+.footer #footer-item3 .india{
+    margin-top: 20px;
+}
+.footer #footer-item3 .getdirection{
+    margin: 20px 0px;
+}
+.footer #footer-item3 .phone{
+    margin-top:20px;
+}
+
+.footer #footer-item4 .insta{
+    color: white;
+}
+.footer #footer-item4 .myhrleft{
+    height: 3px;
+    width: 30px;
+    margin: 5px 0px;
+}
+.footer #footer-item4 .insta-link{
+   display: grid;
+   margin-top: 25px;
+   grid-template-columns: 20% 80%;
+}
+.footer #footer-item4 .insta-link .profile-pic{
+
+}
+.footer #footer-item4 .insta-link .profile-pic a{
+    background-image: url(../img/assertit.io.jpg);
+    background-size: cover;
+    padding: 20px 10px 10px 10px;
+    border-radius: 50%;
+    
+ }
+ .footer #footer-item4 .insta-link .profile-pic a i{
+    font-size: 30px;
+    font-weight: 1000;
+    opacity: 0.8;
+ }
+ .footer #footer-item4 .logo .link{
+    color: var(--blue);
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 18px;
+ }
+
+.footer #footer-item4 .insta-images{
+    width: 240px;
+    display:grid;
+    padding-top: 10px;
+    grid-template-columns: auto auto auto auto;
+ }
+ .footer #footer-item4 .insta-images .insta-image{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    
+ }
+ .footer #footer-item4 .insta-images .insta-image a img{
+    width: 50px;
+    height: 50px;
+    
+ }
+ .footer #footer-item4 .forload{
+     width: 240px;
+     text-align: center;
+ }
+ .footer #footer-item4 .load-more{
+     margin: auto;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--gray-dark);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    outline: none;
+
+ }
+ .footer #footer-item4 .load-more:focus{
+    outline: none;
+ }
+ .footer #footer-item4 .follow-insta{
+    margin: auto;
+   margin-top: 10px;
+   padding: 5px 10px;
+   background-color: #0674fd;
+   border-radius: 5px 5px 5px 5px;
+   border: none;
+   outline: none;
+
+}
+
+
+
+
 /* ----------------------------------------- ./Footer Section -----------------------------------------------------------------*/
 
 
@@ -800,9 +960,12 @@ ul li{
 }
 .footer-bottom .main .fb-item{
     color: white;
+    font-weight: 500;
 }
 .footer-bottom .main #fb-item2{
     text-align: right;
+    font-weight: 500;
+
 }
 .footer-bottom .main #fb-item2 .fab:hover{
     color: #08a2da;
