@@ -472,6 +472,14 @@ body{
 .qualityItem{
     width: 50%;
 }
+@media only screen and (max-width: 1200px){
+    .quality{
+        display: block;
+    }
+    .qualityItem{
+        width: 100%;
+    }
+}
 #qualityItem1{
     position: relative;
 }
@@ -492,7 +500,7 @@ body{
 }
 #qualityItem2{
     position: relative;
-    padding-top: 25px;
+    padding: 27px 20px 0px 40px;
 }
 #qualityItem2 .qbackground {
     font-family: 'Roboto',sans-serif;
@@ -561,10 +569,12 @@ ul li{
 .sevices-bar{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .services-bar-item{
     width: 250px;
     padding:  15px 15px 0px 15px;
+    margin-top: 20px;
     background-color: rgb(234, 247, 248);
     border: 1px dashed lightgray;
 }
@@ -645,9 +655,11 @@ ul li{
 }
 .my-about-us-items{
     display: flex;
+    flex-wrap: wrap;
+
 }
 .my-about-us-items .item{
-    width: 33%;
+    width: 280px;
 
     display:grid;
     grid-template-columns: 20% 80%;
@@ -672,6 +684,15 @@ ul li{
     font-size: 20px;
 }
 
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 900px){
+
+}
+@media screen and (max-width: 768px){
+
+}
 /* ----------------------------------------- ./about-us Section ------------------------------------------------------*/
 
 /* ----------------------------------------- testimonial Section ------------------------------------------------------*/
@@ -682,11 +703,12 @@ ul li{
 
 /* ----------------------------------------- testimonial-bar Section ------------------------------------------------------*/
 .testimonial-bar{
-    display: flex;
+    display: grid;
     padding: 50px 0px;
+    grid-template-columns: auto auto auto auto;
 }
 .testimonial-bar .titem{
-    width: 25%;
+    width: 275px;
     text-align: center;
 }
 .testimonial-bar .titem img{
@@ -699,7 +721,33 @@ ul li{
     filter: grayscale(0%);
 }
 
+@media screen and (max-width: 1200px){
+    .testimonial-bar{
+        grid-template-columns: auto auto auto;
+    }
 
+}
+@media screen and (max-width: 900px){
+    .testimonial-bar{
+        grid-template-columns:  auto auto;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .testimonial-bar{
+        grid-template-columns: auto;
+    }
+    .testimonial-bar .titem{
+        width: 360px;
+        text-align: center;
+    }
+    .testimonial-bar .titem img{
+        height: 110px;
+        filter: grayscale(100%);
+        margin: auto;
+    }
+
+}
 /* ----------------------------------------- ./testimonial-bar Section ------------------------------------------------------*/
 
 /* ----------------------------------------- Form Section -------------------------------------------------------------------*/
@@ -708,6 +756,20 @@ ul li{
 }
 .contact .contactItem{
     width: 50%;
+}
+@media only screen and (max-width: 768px){
+    .contact{
+        display: block;
+    }
+    .contact .contactItem{
+        width: 100%;
+    }
+    .contact #contactItem2{
+        padding: 0px 10px 20px 10px;
+    }
+    .contact #contactItem1{
+        padding: 0px 10px 20px 10px;
+    }
 }
 .contact .contactItem .heading{
     font-size: 32px;
@@ -783,23 +845,39 @@ ul li{
 /* ----------------------------------------- Footer Section -------------------------------------------------------------------*/
 .upper{
     background-image: url("../img/building.png");
-    height: 170px;
     background-size: 100%;
-    filter: grayscale(1%);
+    background-size: cover;
+    padding: 70px 0px;
 }
 .lower{
     background-color: black;
     background-image: url("../img/map.png");
-    height: 450px;
     background-size: contain;
 }
 .footer{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 50px 0px;
+    grid-template-columns: auto 20% auto auto;
+}
+@media screen and (max-width: 1200px){
+    .footer{
+        grid-template-columns: auto auto auto;
+    }
+
+}
+@media screen and (max-width: 900px){
+    .footer{
+        grid-template-columns: auto auto;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .footer{
+        grid-template-columns: 350px;
+    }
+
 }
 .footer .footer-item{
-    padding: 0px 20px;
+    padding: 20px 20px;
 }
 .footer #footer-item1 .about{
     padding: 20px 0px 10px 0px;
@@ -969,6 +1047,20 @@ ul li{
 }
 .footer-bottom .main #fb-item2 .fab:hover{
     color: #08a2da;
+}
+
+@media screen and (max-width: 768px){
+    .footer-bottom .main{
+        grid-template-columns: 50%;
+    }
+    .footer-bottom .main #fb-item1{
+        text-align: center;
+    
+    }
+    .footer-bottom .main #fb-item2{
+        text-align: center;
+    
+    }
 }
 /* ----------------------------------------- ./Footer-bottom Section ---------------------------------------------------------------*/
 
