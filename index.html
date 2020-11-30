@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -21,9 +23,10 @@
 </head>
 
 <body>
+    
     <div class="mainContainer">
         <nav class="navbar">
-            <div class="content">
+            <div class="content" style="width: 100%;">
               <div class="logo">
                 <a href="#"><img src="img/logo2.png" alt="" style="width: 200px;"></a>
               </div>
@@ -31,11 +34,14 @@
                 <div class="icon cancel-btn">
                   <i class="fas fa-times"></i>
                 </div>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">AUR SERVICES</a></li>
+                <li><a href="#">AUR PORTFOLIO</a></li>
+                <li><a href="#">BLOGS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="TEL:9667835545"><i class="fas fa-phone-alt"> </i>+91-9667835545</a></li>
+    
               </ul>
               <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -43,44 +49,37 @@
             </div>
         </nav>
 
-        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 600px;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="height: 600px;">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active" style="height:15px;width: 15px;border-radius: 100%;cursor: pointer;"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1" style="height:15px;width: 15px;border-radius: 100%;cursor: pointer;"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2" style="height:15px;width: 15px;border-radius: 100%;cursor: pointer;"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/banner3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <!-- <h5>First slide label</h5>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/banner1-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <!-- <h5>Second slide label</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="img/banner3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <!-- <h5>Third slide label</h5>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div> -->
+          </div>
+       
         <!-------------------------------- About Section ---------------------------------------------->
         <div class="container">
             <div class="about">
@@ -97,11 +96,11 @@
                         <div class="name">DESKTOP APP DEVELOPMENT</div>
                         <div class="bar">
                             <div class="w3-light-grey w3-round w3-tiny">
-                                <div class="w3-container w3-round w3-tiny progress-lightblue"></div>
+                                <div class="w3-container w3-round w3-tiny progress-lightblue" data-aos="zoom-out" data-aos-duration="1000"></div>
                             </div>
                         </div>
-                        <div class="per" id="per1">
-                            <div class="percentage" id="percentage1">85%</div>
+                        <div class="per" id="per1" >
+                            <div class="percentage" id="percentage1" >85%</div>
                         </div>
                     </div>
                     <div class="progress-item">
@@ -111,8 +110,8 @@
                                 <div class="w3-container w3-round w3-tiny progress-blue"></div>
                             </div>
                         </div>
-                        <div class="per" id="per2">
-                            <div class="percentage" id="percentage2">95%</div>
+                        <div class="per" id="per2" >
+                            <div class="percentage" id="percentage2" >95%</div>
                         </div>
                     </div>
                     <div class="progress-item">
@@ -122,8 +121,8 @@
                                 <div class="w3-container w3-round w3-tiny progress-green"></div>
                             </div>
                         </div>
-                        <div class="per" id="per3">
-                            <div class="percentage" id="percentage3">90%</div>
+                        <div class="per" id="per3" >
+                            <div class="percentage" id="percentage3" >90%</div>
                         </div>
                     </div>
                 </div>
@@ -136,23 +135,23 @@
         <!--------------------------------------------------- What Make Section ---------------------------------------------->
         <div class="whatMake">
             <div class="container">
-                <div class="top">WHAT WE MAKE FOR YOU</div>
-                <div class="heading">What Makes us Different<span class="from-others"> from Others</span></div>
-                <div class="video"><span class="third"><span class="second"><span class="first"><i
+                <div class="top" data-aos="slide-down" data-aos-duration="1000">WHAT WE MAKE FOR YOU</div>
+                <div class="heading" data-aos="slide-down" data-aos-duration="1000">What Makes us Different<span class="from-others"> from Others</span></div>
+                <div class="video" data-aos="slide-up" data-aos-duration="1000"><span class="third"><span class="second"><span class="first"><i
                                     class="fas fa-play play"></i></span></span></span></div>
             </div>
         </div>
         <!-------------------------------------------------- ./What Make Section ---------------------------------------------->
 
         <!-------------------------------------------------- Processing Section ------------------------------------------------>
-        <div class="container">
+        <div class="container" data-aos="slide-up" data-aos-duration="1000">
             <div style="position: relative;top: 94px;text-align: center;">
                 <div id="background">Processing</div>
             </div>
             <div class="processing">
 
                 <div class="processing-title">PROCESSING</div>
-                <div class="heading">Easy <span class="stylish-heading">ways</span> to <br> get ready your work</div>
+                <div class="heading">Easy <span class="stylish-heading" >ways</span> to <br> get ready your work</div>
                 <hr class="hrProcessing">
                 <div class="simple4">Simple 4-step process to deliver on your expectations</div>
 
@@ -163,13 +162,13 @@
         <!-------------------------------------------------- Quality Section ---------------------------------------------->
         <div class="container">
             <div class="quality">
-                <div class="qualityItem" id="qualityItem1">
+                <div class="qualityItem" id="qualityItem1" data-aos="slide-right" data-aos-duration="1000">
                     <div class="backgroundGradient">
                         <div class="qualityPic"></div>
                     </div>
                 </div>
 
-                <div class="qualityItem" id="qualityItem2">
+                <div class="qualityItem" id="qualityItem2" data-aos="slide-left" data-aos-duration="1000">
                     <div class="background-text" style="top: -40px;font-size: 100px;">Features</div>
                     <div class="quality-title">QUALITY OF SERVICES</div>
                     <div class="ourUlitimate">Our <span class="ultimate">Ultimate Goal</span> Is <br> To Bring You</div>
@@ -189,7 +188,7 @@
 
         <div class="container">
             <div class="quality" style="padding-top: 100px;">
-                <div class="qualityItem" id="qualityItem2">
+                <div class="qualityItem" id="qualityItem2" data-aos="slide-right" data-aos-duration="1000">
                     <div class="background-text" style="top: -40px;font-size: 100px;">Features</div>
                     <div class="quality-title">QUALITY OF SERVICES</div>
                     <div class="ourUlitimate">Our <span class="ultimate">Ultimate Goal</span> Is <br> To Bring You</div>
@@ -203,7 +202,7 @@
                     </ul>
                     <input type="submit" value="HIRE US NOW" class="mybtn">
                 </div>
-                <div class="qualityItem" id="qualityItem1">
+                <div class="qualityItem" id="qualityItem1" data-aos="slide-left" data-aos-duration="1000">
                     <div class="backgroundGradient">
                         <div class="qualityPic"></div>
                     </div>
@@ -213,13 +212,13 @@
         <!-------------------------------------------------- ./Quality Section ---------------------------------------------->
 
         <!-------------------------------------------------- Services Section ------------------------------------------------>
-        <div class="container" style="padding-top: 150px;">
+        <div class="container" style="padding-top: 150px;" data-aos="slide-down" data-aos-duration="1000">
             <div style="position: relative;top: 94px;text-align: center;">
                 <div id="background">Services</div>
             </div>
             <div class="processing">
 
-                <div class="processing-title">Services</div>
+                <div class="processing-title" >Services</div>
                 <div class="heading">We’re a <span class="stylish-heading"> customer</span> centric <br> company</div>
                 <hr class="hrProcessing">
                 <div class="simple4"><span class="bold-text"> EVERYDAY MOTIVATION</span> is to serve our customers in
@@ -232,7 +231,7 @@
         <!-------------------------------------------------- Services-bar Section ---------------------------------------------->
         <div class="container">
             <div class="sevices-bar">
-                <div class="services-bar-item" id="sevices-bar-item1">
+                <div class="services-bar-item" id="sevices-bar-item1" data-aos="slide-right" data-aos-duration="1000">
                     <a href="https://assertit.io/website-design-development/">
                         <div class="content">
                             <div class="icon"><i class="fas fa-bullseye inicon"></i></div>
@@ -241,7 +240,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="services-bar-item" id="sevices-bar-item2">
+                <div class="services-bar-item" id="sevices-bar-item2" data-aos="slide-right" data-aos-duration="950">
                     <a href="https://assertit.io/mobile-app-design-development/">
                     <div class="content">
                         <div class="icon"><i class="fas fa-bullseye inicon"></i></div>
@@ -250,7 +249,7 @@
                     </div>
                     </a>
                 </div>
-                <div class="services-bar-item" id="sevices-bar-item3">
+                <div class="services-bar-item" id="sevices-bar-item3" data-aos="slide-left" data-aos-duration="950">
                     <a href="https://assertit.io/search-engine-optimization-seo/">
                         <div class="content">
                             <div class="icon"><i class="fas fa-bullseye inicon"></i></div>
@@ -259,7 +258,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="services-bar-item" id="sevices-bar-item4">
+                <div class="services-bar-item" id="sevices-bar-item4" data-aos="slide-left" data-aos-duration="1000">
                     <a href="https://assertit.io/search-engine-optimization-seo/">
                         <div class="content">
                             <div class="icon"><i class="fas fa-bullseye inicon"></i></div>
@@ -274,7 +273,7 @@
         <!-------------------------------------------------- ./Services-bar Section ---------------------------------------------->
 
         <!-------------------------------------------------------portfolio Section ----------------------------------------------->
-        <div class="container" style="padding-top: 150px;">
+        <div class="container" style="padding-top: 150px;" data-aos="slide-up" data-aos-duration="1000">
             <div style="position: relative;top: 94px;text-align: center;">
                 <div id="background">Portfolio</div>
             </div>
@@ -302,21 +301,21 @@
                     <hr class="myhrleft">
 
                     <div class="my-about-us-items">
-                        <div class="item" id="item1">
+                        <div class="item" id="item1" data-aos="slide-left" data-aos-duration="700">
                             <div class="icon"><i class="fas fa-bullseye inicon"></i></div>
                             <div class="remaining">
                                 <div class="small-heading">50</div>
                                 <div class="bold-text">Expert team</div>
                             </div>
                         </div>
-                        <div class="item" id="item2">
+                        <div class="item" id="item2" data-aos="slide-left" data-aos-duration="800">
                             <div class="icon"><i class="fas fa-bullseye inicon"></i></div>
                             <div class="remaining">
                                 <div class="small-heading">100</div>
                                 <div class="bold-text">Completed projects</div>
                             </div>
                         </div>
-                        <div class="item" id="item3">
+                        <div class="item" id="item3" data-aos="slide-left" data-aos-duration="1000">
                             <div class="icon"><i class="fas fa-bullseye inicon"></i></div>
                             <div class="remaining">
                                 <div class="small-heading">100</div>
@@ -333,7 +332,7 @@
 
         <!----------------------------------------------------- testimonial Section --------------------------------------------->
         <div class="container" style="padding-top: 150px;">
-            <div class="processing">
+            <div class="processing" data-aos="slide-up" data-aos-duration="600">
 
                 <div class="title">TESTIMONIALS</div>
                 <div class="heading">Delivering the quality services that our <span class="stylish-heading">clients <br> deserve</span></div>
@@ -349,10 +348,10 @@
         <!----------------------------------------------------- testimonial-bar Section ----------------------------------->
         <div class="container">
             <div class="testimonial-bar">
-                <div class="titem" id="titem1"><img src="img/ipem.png" alt="IPEM GZB"></div>
-                <div class="titem" id="titem2"><img src="img/examspedia.png" alt="Exam Pedia"></div>
-                <div class="titem" id="titem3"><img src="img/CRMadmin.png" alt="CRM Admin"></div>
-                <div class="titem" id="titem4"><img src="img/ipem-law.png" alt="IPEM Law GZB"></div>
+                <div class="titem" id="titem1" data-aos="fade-in" data-aos-duration="3000"><img src="img/ipem.png" alt="IPEM GZB"></div>
+                <div class="titem" id="titem2" data-aos="fade-in" data-aos-duration="2000"><img src="img/examspedia.png" alt="Exam Pedia"></div>
+                <div class="titem" id="titem3" data-aos="fade-in" data-aos-duration="3000"><img src="img/CRMadmin.png" alt="CRM Admin"></div>
+                <div class="titem" id="titem4" data-aos="fade-in" data-aos-duration="2000"><img src="img/ipem-law.png" alt="IPEM Law GZB"></div>
             </div>
         </div>
         <!----------------------------------------------------- ./testimonial-bar Section ---------------------------------->
@@ -361,7 +360,7 @@
         <!----------------------------------------------------- Form Section ----------------------------------------------->
         <div class="container">
             <div class="contact" style="padding-top: 100px;">
-                <div class="contactItem" id="contactItem1">
+                <div class="contactItem" id="contactItem1" data-aos="slide-right" data-aos-duration="1000">
                     <div class="heading">#3, Raghushree Market, <br> Ajmeri Gate, <span class="stylish-heading">New Delhi</span><br> 110006</div>
                     <hr class="myhrleft" style="margin-bottom: 25px;">
                     <div class="bold-text assert-email">Email:<span class="text"> business@assertit.io</span></div><br>
@@ -369,7 +368,7 @@
                     <div class="text">Having trouble? Find the answer to your query here. Don’t hasitate to contact us!</div>
 
                 </div>
-                <div class="contactItem" id="contactItem2">
+                <div class="contactItem" id="contactItem2" data-aos="slide-left" data-aos-duration="1000">
                     <form action="#" class="home-form">
                         <input type="text" name="fullName" id="fullName" placeholder="Full Name" required="on">
                         <input type="email" name="email" id="email" placeholder="Email Address" required="on">
@@ -448,7 +447,7 @@
         <!--------------------------------------------------- ./Footer Section ----------------------------------------------->
 
         <!--------------------------------------------------- Footer-bottom Section ----------------------------------------------->
-        <div class="footer-bottom">
+       <div class="footer-bottom">
             <div class="container">
                 <div class="main">
                     <div class="footer-text fb-item" id="fb-item1">COPYRIGHT 2020 © ASSERT IT. ALL RIGHTS RESERVED.</div>
@@ -460,6 +459,10 @@
     </div>
     <script src="js/index.js"></script>
     <script src="js/sticky.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

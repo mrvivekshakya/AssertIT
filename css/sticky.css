@@ -48,13 +48,14 @@
 }
 .navbar .menu-list{
   display: inline-flex;
+  padding-top: 15PX;
 }
 .menu-list li{
   list-style: none;
 }
 .menu-list li a{
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   margin-left: 25px;
   text-decoration: none;
@@ -62,6 +63,7 @@
 }
 .menu-list li a:hover{
   color: #007bff;
+  border-bottom: 3px solid #007bff;
 }
 .banner{
   background: url("banner.jpg") no-repeat;
@@ -107,7 +109,7 @@
     padding: 0 30px;
   }
 }
-@media (max-width: 868px) {
+@media (max-width: 1080px) {
   body.disabled{
     overflow: hidden;
   }
@@ -147,6 +149,6 @@
 }
 @media (max-width: 380px) {
   .navbar .logo a{
-    font-size: 27px;
+    font-size: 20px;
   }
 }

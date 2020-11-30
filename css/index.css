@@ -158,6 +158,13 @@ body{
     line-height: 35px;
     font-family: 'Poppins',sans-serif;
 }
+.middle-white-heading{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    line-height: 35px;
+    font-family: 'Poppins',sans-serif;
+}
 .stylish-heading{
     font-family: 'Playfair Display',serif;
     word-spacing: 0px;
@@ -173,7 +180,15 @@ body{
     font-size: 18px;
     line-height: 1.61;
     letter-spacing: 0.005em;
-    display: inline-block;
+    
+}
+.white-text{
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+    line-height: 1.61;
+    letter-spacing: 0.005em;
 }
 .bold-text{
     font-family: sans-serif;
@@ -182,7 +197,7 @@ body{
     font-size: 18px;
     line-height: 1.61;
     letter-spacing: 0.005em;
-    display: inline-block;
+   
 }
 .background-text{
     font-family: 'Roboto',sans-serif;
@@ -248,17 +263,29 @@ body{
 /*-----------------------------------------------------------About-----------------------------------------------------------------*/
 .about{
     display: flex;
+    flex-wrap: wrap;
 }
 .aboutItem{
     
 }
 #aboutItem1{
-    width: 600px;
+    width: 500px;
     padding-top: 120px;
     text-align: left;
 }
 #aboutItem2{
-    width: 700px;
+    width: 600px;
+}
+@media only screen and (max-width: 1200px){
+    #aboutItem1{
+        width: 100%;
+        padding-top: 120px;
+        text-align: left;
+        padding: 10px;
+    }
+    #aboutItem2{
+        display: none;
+    }
 }
 
 #aboutItem1 .title{
