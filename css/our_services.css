@@ -189,27 +189,128 @@
 
 /* ----------------------------------------- ./about-us Section ------------------------------------------------------*/
 /*----------------------------------------------------- Blog Archive ---------------------------------------------*/
-.blog-archieve{
-    display: grid;
-    grid-template-columns: auto auto auto;
+
+.testimonial{
+    position: relative;
 }
-.blog-archieve .item{
-    box-shadow: 2px 2px 2px gray;
+.testimonial .item{
+    box-shadow: 1px 2px 10px 2px lightgray;
     border-radius: 10px 10px 10px 10px;
+    text-align: center;
 }
-.blog-archieve .item img{
-    max-width: 100%;
+.testimonial .item .mybtn{
+    position: absolute;
+    margin: -27px 0px 0px 110px;
+    display: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.testimonial .item .mybtn a{
+    color: white;
+}
+.testimonial .item img{
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
+}
+.testimonial .item .div1{
+    padding: 40px 20px 20px 20px;
+}
+
+.testimonial .item .div1 .date{
+    text-align: left;
+}
+.testimonial .item .div1 .blog-user{
+    text-align: left;
+}
+.testimonial .item .div1 .date i{
+    color: #0674fd;
+}
+.testimonial .item .div1 .blog-user i{
+    color: #0674fd;
+}
+.testimonial .item .div1 .blog-user i a:hover{
+    color: #0674fd;
+}
+.testimonial .item .div1 .hrdiv{
+    border-bottom: 1px solid lightgray;
+}
+.testimonial .item .div1 .hrdiv hr{
+    background-color: #0674fd;
+    height: 2px;
+    width: 40px;
+    margin-bottom: 0px;
 
 }
-.blog-archieve #item1{
-  
+.testimonial .item .small-heading{
+    font-weight: 500;
+    padding: 0px 20px 20px 20px;
+    text-align: left;
 }
-.blog-archieve #item2{
-    margin: 0px 40px;
- 
+
+.testimonial:hover .small-heading{
+    color: #0674fd;;
 }
-.blog-archieve #item3{
-   
+.testimonial:hover .mybtn{
+    display: block;
 }
+
+
 /*----------------------------------------------------- ./Blog Archive ---------------------------------------------*/
+
+
+/*-------------------------------------------- Slide --------------------------------------------*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .gallery-cell {
+    width: 33%;
+  }
+  
+  .testimonial {
+    text-align: center;
+    max-width: 850px;
+    margin: 100px auto 130px auto;
+    padding: 0 20px;
+  }
+  
+  .testimonial-avatar {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .testimonial-quote {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0;
+  }
+  
+  .testimonial-author {
+    display: block;
+    font-weight: 800;
+    color: #7AA641;
+  }
+  
+  .flickity-page-dots {
+    bottom: 25px;
+    display: none;
+  }
+  
+  .flickity-page-dots .dot.is-selected {
+    background: #7AA641;
+    display: none;
+  }
+
+ 
+  @media only screen and (max-width:900px){
+    .gallery-cell {
+      width: 50%;
+    }
+}
+@media only screen and (max-width:600px){
+    .gallery-cell {
+      width: 100%;
+    }
+}
+/*-------------------------------------------- ./Slide ------------------------------------------*/
