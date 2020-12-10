@@ -20,10 +20,11 @@
 }
 @media only screen and (max-width: 900px){
     .ourVision-header .container .our-title{
+        padding-top: 60px;
         font-size: 25px;
     }
     .ourVision-header .container .home{
-        padding: 200px 0px 100px 0px; 
+        padding: 10px 0px 10px 0px; 
     }
     .ourVision-header .container{
         text-align: center;

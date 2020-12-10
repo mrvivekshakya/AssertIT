@@ -83,7 +83,7 @@
   padding-top: 20px;
   text-align: justify;
 }
-.icon{
+.icon1{
   color: #fff;
   font-size: 20px;
   cursor: pointer;
@@ -113,10 +113,10 @@
   body.disabled{
     overflow: hidden;
   }
-  .icon{
+  .icon1{
     display: block;
   }
-  .icon.hide{
+  .icon1.hide{
     display: none;
   }
   .navbar .menu-list{

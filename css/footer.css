@@ -207,7 +207,7 @@
 
 @media screen and (max-width: 768px){
     .footer-bottom .main{
-        grid-template-columns: 50%;
+        grid-template-columns: 100%;
     }
     .footer-bottom .main #fb-item1{
         text-align: center;
