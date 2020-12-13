@@ -83,6 +83,10 @@
     outline: none;
     border:1px solid #0674fd;
 }
+.home-form textarea:focus{
+    outline: none;
+    border:1px solid #0674fd;
+}
 .home-form input::placeholder{
     font-family: sans-serif;
     font-weight: 500px;
