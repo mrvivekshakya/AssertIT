@@ -9,17 +9,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="img/cropped-favicon-1-200x160-1-32x32.png" />
+    <link rel="shortcut icon" href="../img/cropped-favicon-1-200x160-1-32x32.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/gernal.css">
-    <link rel="stylesheet" href="css/sticky.css">
-    <link rel="stylesheet" href="css/who_we_are.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/gernal.css">
+    <link rel="stylesheet" href="../css/sticky.css">
+    <link rel="stylesheet" href="../css/who_we_are.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <link rel="stylesheet" href="css/WDD-Sevices.css">
+    <link rel="stylesheet" href="../css/WDD-Sevices.css">
 </head>
 <body>
 
@@ -28,18 +28,32 @@
         <nav class="navbar">
             <div class="content" style="width: 100%;">
               <div class="logo">
-                <a href="#"><img src="img/logo2.png" alt="" style="width: 200px;"></a>
+                <a href="../index.html"><img src="../img/logo2.png" alt="" style="width: 200px;"></a>
               </div>
               <ul class="menu-list">
                 <div class="icon1 cancel-btn">
                   <i class="fas fa-times"></i>
                 </div>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">AUR SERVICES</a></li>
-                <li><a href="#">AUR PORTFOLIO</a></li>
-                <li><a href="#">BLOGS</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="../index.html">HOME</a></li>
+                <li class="about-us"><a href="../about_us.html">ABOUT US </a><i class="fas fa-angle-down down1"></i>
+                  <ul class="about-dropdown">
+                    <li><a href="../About_Us/our_vision.html"><hr>OUR VISION</a></li>
+                    <li><a href="../About_Us/who_we_are.html"><hr>WHO WE ARE</a></li>
+                  </ul>
+                </li>
+                <li class="our-services"><a href="#">AUR SERVICES </a><i class="fas fa-angle-down down2"></i>
+                  <ul class="services-dropdown">
+                    <li><a href="../Services/WDD-Sevices.html"><hr> WEBSITE DESIGN AND DEVELOPMENT</a></li>
+                    <li><a href="../Services/MADD-Sevices.html"><hr>MOBILE APP DESIGN AND DEVELOPMENT</a></li>
+                    <li><a href="../Services/EM-Services.html"><hr>EMAIL MARKETING</a></li>
+                    <li><a href="../Services/SMO-Services.html"><hr>SOCIAL MEDIA MARKETING (SMO)</a></li>
+                    <li><a href="../Services/SEO-Sevices.html"><hr>SEARCH ENGINE OPTIMIZATION (SEO)</a></li>
+                    <li><a href="../Services/PPC-Services.html"><hr>PAY-PER-CLICK ADVERTISEMENT (PPC)</a></li>
+                  </ul>
+                </li> 
+                <li><a href="../our_portfolio.html">AUR PORTFOLIO</a></li>
+                <li><a href="../blogs.html">BLOGS</a></li>
+                <li><a href="../contactus.html">CONTACT US</a></li>
                 <li><a href="TEL:9667835545"><i class="fas fa-phone-alt"> </i>+91-9667835545</a></li>
     
               </ul>
@@ -55,7 +69,7 @@
             <div class="black">
                 <div class="container">
                     <div class="our-title middle-white-heading"> Website Design & Development</div>
-                    <div class="home white-text"><a href="index.html"> Home</a> / Website Design & Development</div>
+                    <div class="home white-text"><a href="../index.html"> Home</a> / Website Design & Development</div>
                 </div>
             </div>
         </div>
@@ -70,7 +84,7 @@
                             <div class="testimonial">
                                <a href="#">
                                 <div class="item" id="item1">
-                                    <img src="img/Servies/wd1.jpg" alt="AssertIT">
+                                    <img src="../img/Servies/wd1.jpg" alt="AssertIT">
                                 </div>
                                </a>
                             </div>
@@ -79,7 +93,7 @@
                             <div class="testimonial">
                                <a href="#">
                                 <div class="item" id="item1">
-                                    <img src="img/Servies/wd2.jpg" alt="AssertIT">
+                                    <img src="../img/Servies/wd2.jpg" alt="AssertIT">
                                 </div>
                                </a>
                             </div>
@@ -88,7 +102,7 @@
                             <div class="testimonial">
                                <a href="#">
                                 <div class="item" id="item1">
-                                    <img src="img/Servies/wd3.jpg" alt="AssertIT">
+                                    <img src="../img/Servies/wd3.jpg" alt="AssertIT">
                                 </div>
                                </a>
                             </div>
@@ -97,13 +111,74 @@
                             <div class="testimonial">
                                <a href="#">
                                 <div class="item" id="item1">
-                                    <img src="img/Servies/wd4.jpg" alt="AssertIT">
+                                    <img src="../img/Servies/wd4.jpg" alt="AssertIT">
                                 </div>
                                </a>
                             </div>
                         </div>
                     </div>
+                    <div class="changes-buttons">
+                        <ul class="ul-button">
+                            <li class="li-button active" id="li-button1" onclick="button1()">What We Offer</li>
+                            <li class="li-button" id="li-button2" onclick="button2()">Our Process</li>
+                            <li class="li-button" id="li-button3" onclick="button3()">What Can You Expect?</li>
+                        </ul>
+                    </div>
+                    <div class="hidden">.</div>
+                    <div class="hidden">.</div>
+                    <div class="hidden">.</div>
+                    
+                    <div class="for-content">
+                        <div class="content-div active" id="content-div1">
+                            <ul class="ul-content ul1">
+                                <li class="li-content li1"><span class="heading">● </span>Complete Website Development</li>
+                                <li class="li-content li1"><span class="heading">● </span>Landing Page Design & Development</li>
+                                <li class="li-content li1"><span class="heading">● </span>Full Website Redesign</li>
+                                <li class="li-content li1"><span class="heading">● </span>Mobile-First Websites</li>
+                                <li class="li-content li1"><span class="heading">● </span>Interactive Website Development</li>
+                            </ul>
+                        </div>
+                        <div class="content-div" id="content-div2">
+                            <div class="heading">Step 1 – Analysis of Requirements</div>
+                            <ul class="ul2">
+                                <li class="li2"><span class="heading">● </span>Identify the detailed requirements of web development, taking into account the demographics, interests, and preferences of your users.</li>
+                                <li class="li2"><span class="heading">● </span> Propose a custom solution after understanding your business model and objectives.</li>
+                            </ul>
+                            <div class="heading">Step 2 – Wireframing and Designing</div>
+                            <ul class="ul2">
+                                <li class="li2"><span class="heading">● </span>Submit a blueprint design and present wireframes for each web page</li>
+                                <li class="li2"><span class="heading">● </span>Design a visually appealing UI for the website</li>
+                            </ul>
+                            <div class="heading">Step 3 – Development</div>
+                            <ul class="ul2">
+                                <li class="li2"><span class="heading">● </span>Code the functionality and layout of the complete website</li>
+                                <li class="li2"><span class="heading">● </span>Submit the first version to the client for feedback</li>
+                            </ul>
+                            <div class="heading">Step 4 – Testing</div>
+                            <ul class="ul2">
+                                <li class="li2"><span class="heading">● </span>Test the website and ensure that it is 100% bug-free</li>
+                                <li class="li2"><span class="heading">● </span>Get the final approval after testing from the client</li>
+                            </ul>
+                            <div class="heading">Step 5 – Deployment</div>
+                            <ul class="ul2">
+                                <li class="li2"><span class="heading">● </span>Deploy the website to the client’s server</li>
+                                <li class="li2"><span class="heading">● </span>Make the website fully accessible for users</li>
+                            </ul>
+                        </div>
+                        <div class="content-div" id="content-div3">
+                            <div class="text">With more than a billion websites out there, it is important that your site stand out, represent your brand clearly, structure your products and services, and helps you drive constant traffic. Our expert team can help you deliver:</div>
+                            <ul class="ul1">
+                                <li class="li1"><span class="heading">● </span>A site which is SEO optimized so that it gets maximum visibility in major search engines</li>
+                                <li class="li1"><span class="heading">● </span>Custom-designed web pages with a clear messaging, simple user journey, and appealing design, all geared towards converting visitors into customers</li>
+                                <li class="li1"><span class="heading">● </span>Mobile-friendly website optimized for every screen size to ensure ease of use and smooth navigation</li>
+                                <li class="li1"><span class="heading">● </span>Advanced website features such as e-commerce support, forums, live-chat functionality, contest registration etc.</li>
+                                <li class="li1"><span class="heading">● </span>Clear content communication and call to actions to ensure that visitors don’t have a hard time understanding company’s products, services and values.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <script src="../js/tab.js"></script>
                 <div class="secondMain-item" id="secondMain-item2">
                     <div class="middle-heading contact-heading">Contact</div>
                     <div class="text addr"><i class="fas fa-map-marked-alt"></i> #3, Raghushree Market, Ajmeri <br><span style="padding-left: 40px;"> Gate, New Delhi-110006</span></div>
@@ -147,7 +222,7 @@
             <div class="container">
                 <div class="footer">
                     <div class="footer-item" id="footer-item1">
-                        <a href="index.html"><img src="img/logo2-1.png" alt="" height="60"></a>
+                        <a href="../index.html"><img src="../img/logo2-1.png" alt="" height="60"></a>
                         <div class="footer-text about">Our professional Web development Team delivers a wide range of creative &Technical Web Solutions for areas ranging from an Educational portal to creating a corporate online presence.</div>
                         <div class="bold-text whatsapp"><i class="fab fa-whatsapp-square"></i><a href="tel:+91-9667835545"> +91-9667835545</a></div><br>
                         <div class="bold-text gmail"><i class="fas fa-envelope"></i><a href="mailto:business@assertit.io"> business@assertit.io</a></div>
@@ -184,14 +259,14 @@
                             </div>
                         </div>
                         <div class="insta-images">
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta1.jpg" alt="Assert Instagram Post"></a></div>
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta2.jpg" alt="Assert Instagram Post"></a></div>
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta3.jpg" alt="Assert Instagram Post"></a></div>
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta4.jpg" alt="Assert Instagram Post"></a></div>
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta5.jpg" alt="Assert Instagram Post"></a></div>
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta6.jpg" alt="Assert Instagram Post"></a></div>
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta7.jpg" alt="Assert Instagram Post"></a></div>
-                            <div class="insta-image"><a href="#"><img src="img/insta/insta8.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta1.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta2.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta3.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta4.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta5.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta6.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta7.jpg" alt="Assert Instagram Post"></a></div>
+                            <div class="insta-image"><a href="#"><img src="../img/insta/insta8.jpg" alt="Assert Instagram Post"></a></div>
 
                         </div>
                         <div class="forload">
@@ -216,8 +291,8 @@
         <!--------------------------------------------------- ./Footer-bottom Section ----------------------------------------------->
 
     </div>
-    <script src="/js/sticky.js"></script>
-    <script src="js/slide.js"></script>
+    <script src="../js/sticky.js"></script>
+    <script src="../js/slide.js"></script>
     
 </body>
 </html>

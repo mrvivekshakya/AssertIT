@@ -168,6 +168,9 @@
     padding: 0px 40px 20px 40px;
     text-align: left;
 }
+.blog-blog .small-heading:hover a{
+    color: #0674fd;
+}
 .blog-blog .small-heading{
     font-weight: 500;
     padding: 5px 40px 20px 40px;
@@ -307,19 +310,44 @@
 
 }
 .recent-blogs .recent-blog{
-    list-style-position: inside;
+    /* list-style-position: inside; */
     display: list-item;
-    text-align: -webkit-match-parent;
     list-style: none;
+    text-align: -webkit-match-parent;
     line-height: 1.8125;
     color: rgb(19, 18, 18);
     border-bottom: 1px solid lightgray;
     padding: 15px 0px;
+    padding-left: 0px;
+    transition:  padding-left 0.4s;
+}
+.recent-blogs li::before {
+    content: "\2022";
+    color: white;
+    font-size:25px;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-top: 5page2px;
+    margin-left: -1em;
+    position:absolute;
+    transition: margin-left 0.4s;
 }
 .recent-blogs .recent-blog .recent-blog-link{
     font-weight: 500;
 }
-
+.recent-blogs li:hover::before {
+    color: #0674fd;
+    
+}
+.recent-blogs .recent-blog:hover{
+    padding-left: 30px;
+} 
+.recent-blogs .recent-blog .recent-blog-link:hover{
+    /* background-image: linear-gradient(#0674fd#0674fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
 
 @media only screen and (max-width:900px){
     .searchDiv{
@@ -372,7 +400,6 @@
 .pagination1 .ppage{
     width: 50px;
     height: 50px;
-    background-color: rgb(238, 249, 255);
     text-align: center;
     display: flex;
     justify-content: center;

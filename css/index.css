@@ -406,6 +406,38 @@ ul li{
 /* ----------------------------------------- ./portfolio Section ------------------------------------------------------*/
 
 /* ----------------------------------------- portfolio-bar Section ------------------------------------------------------*/
+.portfoliobar{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.portfoliobar .portfolio-item .for-image{
+    padding: 10px;
+    border: 1px dashed green;
+    overflow: hidden;
+}
+.portfoliobar #portfolio-item1 .for-image img{
+    width: 100%;
+    height: 300px;
+}
+.portfoliobar #portfolio-item2 .for-image img{
+    width: 100%;
+    height: 600px;
+}
+.portfoliobar #portfolio-item3 .for-image img{
+    width: 100%;
+    height: 300px;
+}
+
+.portfoliobar .portfoliobar-item img{
+    width: 100%;
+}
+.portfoliobar .overdiv{
+    border: 1px dotted red;
+    background-color: black;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
 /* ----------------------------------------- ./portfolio-bar Section ------------------------------------------------------*/
 
 /* ----------------------------------------- about-us Section ------------------------------------------------------*/
