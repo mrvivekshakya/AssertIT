@@ -3,5 +3,5 @@ var flkty = new Flickity( '.main-gallery', {
     contain: true,
     wrapAround: true,
     prevNextButtons: false,
-    // autoPlay: 5000
+    autoPlay: 2000
   });
